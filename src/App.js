@@ -6,15 +6,15 @@ import React, { useState } from "react";
 import LandingPage from "./components/LandingPage";
 import AboutMe from "./components/AboutMe";
 import AboutMeButton from "./components/AboutMeButton";
+import Icon from "./components/Icon";
 
 function App() {
   const [aboutMeClicked, setAboutMeClicked] = useState(false);
 
   return (
-    <div>
+    <div className="grid">
       <LandingPage />
-
-      <AboutMeButton />
+      <Icon />
     </div>
   );
 }

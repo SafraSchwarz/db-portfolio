@@ -1,11 +1,50 @@
+div {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: brown;
+}
+
+.grid {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
 .about-me-button {
-  border: 3px;
-  border-color: black;
   background-color: rgb(85, 106, 85);
-  max-width: 80px;
-  max-height: 90px;
+  max-width: 104px;
+  max-height: 100px;
   border-radius: 1rem;
   font-family: "futura_m";
+  font-size: 1.5rem;
+}
+
+.projects-button {
+  background-color: rgb(85, 106, 85);
+  max-width: 104px;
+  max-height: 100px;
+  border-radius: 1rem;
+  font-family: "futura_m";
+  font-size: 1.5rem;
+}
+
+.contact-button {
+  background-color: rgb(85, 106, 85);
+  max-width: 104px;
+  max-height: 100px;
+  border-radius: 1rem;
+  font-family: "futura_m";
+  font-size: 1.5rem;
+}
+
+.skills-button {
+  background-color: rgb(85, 106, 85);
+  max-width: 104px;
+  max-height: 100px;
+  border-radius: 1rem;
+  font-family: "futura_m";
+  font-size: 1.5rem;
 }
 
 .background {
@@ -23,6 +62,7 @@ body {
 }
 
 .landing-page {
+  color: aliceblue;
   font-size: 3rem;
   line-height: 1;
   letter-spacing: 0.01em;
@@ -30,6 +70,15 @@ body {
   font-family: "futura_m";
   font-weight: normal;
   text-shadow: 0 10px 30px rgb(2 11 22 / 50%);
+  background-color: blueviolet;
+}
+
+.planet-icon {
+  display: grid;
+  place-items: center;
+  color: aliceblue;
+  font-size: 15rem;
+  background-color: rgb(220, 99, 0);
 }
 
 .my-title {
