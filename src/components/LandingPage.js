@@ -12,7 +12,7 @@ const LandingPage = (props) => {
       <h1 className="my-name">Davon Belvin</h1>
       <p className="my-title">Front End Developer</p>
       <div className="button-container">
-        <AboutMeButton />
+        <AboutMeButton handleAboutMeClick={props.handleAboutMeClick} />
         <ProjectsButton />
         <SkillsButton />
       </div>

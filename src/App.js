@@ -9,12 +9,25 @@ import AboutMeButton from "./components/AboutMeButton";
 import Icon from "./components/Icon";
 
 function App() {
-  const [aboutMeClicked, setAboutMeClicked] = useState(false);
+  const [showAboutMe, setShowAboutMe] = useState(false);
+
+  let activeTile = <Icon />;
+
+  const handleAboutMeClick = (event) => {
+    event.preventDefault();
+    setShowAboutMe(!showAboutMe);
+  };
+
+  if (showAboutMe) {
+    activeTile = <AboutMe />;
+  } else {
+    activeTile = <Icon />;
+  }
 
   return (
     <div className="grid">
-      <LandingPage />
-      <Icon />
+      <LandingPage handleAboutMeClick={handleAboutMeClick} />
+      {activeTile}
     </div>
   );
 }
