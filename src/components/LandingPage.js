@@ -14,7 +14,7 @@ const LandingPage = (props) => {
       <div className="button-container">
         <AboutMeButton handleAboutMeClick={props.handleAboutMeClick} />
         <ProjectsButton />
-        <SkillsButton />
+        <SkillsButton handleSkillsClick={props.handleSkillsClick} />
       </div>
       <div className="button-container-row-2">
         <ContactButton />

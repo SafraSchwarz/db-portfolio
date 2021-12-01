@@ -106,3 +106,7 @@ body {
 .my-title {
   color: aliceblue;
 }
+
+li {
+  list-style-type: none;
+}
