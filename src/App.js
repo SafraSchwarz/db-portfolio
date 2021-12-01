@@ -7,26 +7,29 @@ import LandingPage from "./components/LandingPage";
 import AboutMe from "./components/AboutMe";
 import AboutMeButton from "./components/AboutMeButton";
 import Icon from "./components/Icon";
+import Skills from "./components/Skills";
 
 function App() {
-  const [showAboutMe, setShowAboutMe] = useState(false);
+  // const [showAboutMe, setShowAboutMe] = useState(false);
 
-  let activeTile = <Icon />;
+  const [activeTile, setActiveTile] = useState(<Icon />);
 
   const handleAboutMeClick = (event) => {
     event.preventDefault();
-    setShowAboutMe(!showAboutMe);
+    setActiveTile(<AboutMe />);
   };
 
-  if (showAboutMe) {
-    activeTile = <AboutMe />;
-  } else {
-    activeTile = <Icon />;
-  }
+  const handleSkillsClick = (event) => {
+    event.preventDefault();
+    setActiveTile(<Skills />);
+  };
 
   return (
     <div className="grid">
-      <LandingPage handleAboutMeClick={handleAboutMeClick} />
+      <LandingPage
+        handleAboutMeClick={handleAboutMeClick}
+        handleSkillsClick={handleSkillsClick}
+      />
       {activeTile}
     </div>
   );
